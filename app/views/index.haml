@@ -1,3 +1,35 @@
-%h1
-  Hello, World!
-  
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title The Web presence of Stuart Hannig
+    %link{:href => "/css/theme.css", :rel => "stylesheet"}
+    
+  %body
+    .container
+      .profile-container.unfold
+        .profile
+          .avatar
+            %img{:src => "/img/me.png", :width => "", :height => ""}
+          .follow
+            %a{:href => "https:/github.com/stuarthannig/", :width => "135", :height => "135"}
+              %button
+                %i.fa.fa-github-alt
+                Github
+        %ul.profile-list
+          %li.first
+            %a{:href => "http://www.linkedin.com/in/stuarthannig/"}
+              %i.fa.fa-linkedin
+              LinkedIn
+          %li.second
+            %a{:href => ""}
+              %i.fa.fa-google-plus
+              Google+
+          %li.third
+            %a{:href => ""}
+              %i.fa.fa-instagram
+              Instagram
+          %li.fourth
+            %a{:href => ""}
+              %i.fa.fa-twitter
+              Twitter
